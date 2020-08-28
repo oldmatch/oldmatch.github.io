@@ -1,0 +1,32 @@
+给点钱吧:
+  full_link: /img/qr.jpg
+  thumb_link: /img/qr.jpg
+  descr: 一分也是爱啊
+王晓晨1:
+  full_link: /img/women1.jpg
+  thumb_link: /img/women1.jpg
+  descr: 王晓晨1
+王晓晨2:
+  full_link: /img/women2.jpg
+  thumb_link: /img/women2.jpg
+  descr: 王晓晨2
+美食:
+  full_link: /img/foods.jpg
+  thumb_link: /img/foods.jpg
+  descr: 大餐
+干农活:
+  full_link: /img/feet.jpg
+  thumb_link: /img/feet.jpg
+  descr: 干农活
+童年:
+  full_link: /img/childhood.jpg
+  thumb_link: /img/childhood.jpg
+  descr: 童年的四驱车
+偶像:
+  full_link: /img/idol.jpg
+  thumb_link: /img/idol.jpg
+  descr: 周星驰
+有趣:
+  full_link: /img/funny.jpg
+  thumb_link: /img/funny.jpg
+  descr: interesting
