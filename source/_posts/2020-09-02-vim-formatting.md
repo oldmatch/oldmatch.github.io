@@ -1,6 +1,5 @@
 ---
-cover: https://oldmatch-1302978637.cos.ap-guangzhou.myqcloud.com/59ac2e13d0d8dcdd16c581b706b77b51_1.jpg
-copyright: true
+thumbnail: https://oldmatch-1302978637.cos.ap-guangzhou.myqcloud.com/59ac2e13d0d8dcdd16c581b706b77b51_1.jpg
 title: vim中自动格式化代码
 date: 2020-09-02 10:39
 tags:
