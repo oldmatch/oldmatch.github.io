@@ -1,6 +1,13 @@
-
 ---
+cover: https://oldmatch-1302978637.cos.ap-guangzhou.myqcloud.com/59ac2e13d0d8dcdd16c581b706b77b51_1.jpg
+copyright: true
 title: vim中自动格式化代码
+date: 2020-09-02 10:39
+tags:
+  - linux
+  - vim
+categories:
+  - 分享
 ---
 
 在vim中其实也有像Eclipse中的ctrl + shift +F 的自动格式化代码的操作，尽管非常强大，但是通常会破坏代码的原有的缩进，
