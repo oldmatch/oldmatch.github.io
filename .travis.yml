@@ -21,6 +21,7 @@ after_script:
   - git add .
   - git commit -m "Update blog content by Travis CI"
   - git push --force --quiet "https://${GH_TOKEN}@github.com/oldmatch/oldmatch.github.io.git" master:master
+  - git push --force --quiet "https://${CD_USER}:${CD_TOKEN}@git@e.coding.net:kangzhong/oldmatch/oldmatch.git" master:master
 
 branches:
   only:
