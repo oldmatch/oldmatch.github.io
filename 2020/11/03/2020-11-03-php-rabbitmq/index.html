@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    平凡小窝
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="oldmatch" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.1.1"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">oldmatch</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="关于">
+		                关于
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/oldmatch" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://oldmatch-1302978637.cos.ap-guangzhou.myqcloud.com/banner/sky.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >RabbitMQ 基础使用</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="RabbitMQ-基础使用"><a href="#RabbitMQ-基础使用" class="headerlink" title="RabbitMQ 基础使用"></a>RabbitMQ 基础使用</h1><h3 id="RabbitMQ介绍"><a href="#RabbitMQ介绍" class="headerlink" title="RabbitMQ介绍"></a>RabbitMQ介绍</h3><ul>
+<li><p>MQ是 message queue 的简称，是应用程序和应用程序之间通信的方法。</p>
+</li>
+<li><p>RabbitMQ是一个由erlang语言编写的、开源的、在AMQP基础上完整的、可复用的企业消息系统。支持多种语言，包括java、Python、ruby、PHP、C/C++等。</p>
+</li>
+<li><p>AMQP：advanced message queuing protocol ，一个提供统一消息服务的应用层标准高级消息队列协议，是应用层协议的一个开放标准，为面向消息的中间件设计。基于此协议的客户端与消息中间件可传递消息并不受客户端/中间件不同产品、不同开发语言等条件的限制。</p>
+</li>
+<li><p>实用优点：应用解耦，流量削峰，异步处理</p>
+</li>
+</ul>
+<h2 id="RabbitMQ安装-docker安装"><a href="#RabbitMQ安装-docker安装" class="headerlink" title="RabbitMQ安装(docker安装)"></a>RabbitMQ安装(docker安装)</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://hub.docker.com/_/rabbitmq">https://hub.docker.com/_/rabbitmq</a></li>
+</ul>
+<blockquote>
+<p>tips: management版本是带web管理工具的</p>
+</blockquote>
+<p>docker-compose.yml</p>
+<pre><code>version: &#39;2&#39;
+services:
+rabbitmq:
+image: rabbitmq:management
+container_name: rabbitmq
+hostname: myrabbitmq
+ports:
+  - 15672:15672
+  - 5672:5672
+environment:
+  - RABBITMQ_DEFAULT_USER=guest
+  - RABBITMQ_DEFAULT_PASS=guest
+restart: always
+# 里面的/var/lib/rabbitmq/.erlang.cookie 需要600权限
+volumes:
+  - ./data:/var/lib/rabbitmq</code></pre>
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><pre><code>docker-compose up -d</code></pre>
+<ol>
+<li>docker ps -a 查看状态</li>
+<li>访问ip:15762查看web界面 ps:记得打开端口可以访问</li>
+</ol>
+<h2 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h2><pre><code>docker-compose down</code></pre>
+<h2 id="简单使用-单发送单接收：简单的发送与接收，没有特别的处理"><a href="#简单使用-单发送单接收：简单的发送与接收，没有特别的处理" class="headerlink" title="简单使用(单发送单接收：简单的发送与接收，没有特别的处理"></a>简单使用(单发送单接收：简单的发送与接收，没有特别的处理</h2><p><img src="https://www.rabbitmq.com/img/tutorials/python-one.png"></p>
+<p>引入包</p>
+<pre><code>composer require php-amqplib/php-amqplib</code></pre>
+<p>发送</p>
+<pre><code>// 连接RabbitMQ
+$connection = new \PhpAmqpLib\Connection\AMQPStreamConnection(&#39;ip&#39;, 5672, &#39;guest&#39;, &#39;guest&#39;);
+// 创建一个通道
+$channel = $connection-&gt;channel();
+// 声明一个队列
+$channel-&gt;queue_declare(&#39;hello&#39;, false, false, false, false);
+// 发送的内容
+$msg = new \PhpAmqpLib\Message\AMQPMessage(&#39;Hello World&#39;);
+$channel-&gt;basic_publish($msg, &#39;&#39;, &#39;hello&#39;);
+
+echo &quot; [x] Sent &#39;Hello World!&#39;\n&quot;;
+// 关闭通道
+$channel-&gt;close();
+// 关闭连接
+$connection-&gt;close();</code></pre>
+<p>消费</p>
+<pre><code>// 连接RabbitMQ
+$connection = new \PhpAmqpLib\Connection\AMQPStreamConnection(&#39;ip&#39;, 5672, &#39;guest&#39;, &#39;guest&#39;);
+// 创建一个通道
+$channel = $connection-&gt;channel();
+// 声明一个队列
+$channel-&gt;queue_declare(&#39;hello&#39;, false, false, false, false);
+
+echo &#39; [*] Waiting for messages. To exit press CTRL+C&#39;, &quot;\n&quot;;
+
+
+// 当调用basic_consume，我们的代码会阻塞。当我们收到消息时，我们的回调函数将通过接受到返回的消息传递
+$callback = function ($msg) &#123;
+    echo &quot; [x] Received &quot;, $msg-&gt;body, &quot;\n&quot;;
+&#125;;
+
+$channel-&gt;basic_consume(&#39;hello&#39;, &#39;&#39;, false, true, false, false, $callback);
+
+while (count($channel-&gt;callbacks)) &#123;
+    $channel-&gt;wait();
+&#125;</code></pre>
+<p>发送测试</p>
+<pre><code>[x] Sent &#39;Hello World!&#39;</code></pre>
+<p>消费测试</p>
+<pre><code>[*] Waiting for messages. To exit press CTRL+C
+[x] Received Hello World</code></pre>
+<h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><p>感谢<a target="_blank" rel="noopener" href="https://blog.lihq.xyz/2020/08/13/rabbitmq-first-experience">海清博客</a>的分享并指导</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://oldmatch.github.io/2020/11/03/2020-11-03-php-rabbitmq/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://oldmatch.github.io/2020/11/03/2020-11-03-php-rabbitmq/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="https://oldmatch.github.io" style="border-bottom: none;">oldmatch</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
